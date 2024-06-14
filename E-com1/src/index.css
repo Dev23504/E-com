@@ -1,1 +1,15 @@
-
+.ul{
+    /* border: solid; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    font-size: 18px;
+    color: blue;
+  }
+  .img-fluid{
+    /* !important: This keyword overrides any other height declarations for the same elements, giving this rule the highest priority. */
+    height: 250px !important;
+    width: 200px !important;
+  }
