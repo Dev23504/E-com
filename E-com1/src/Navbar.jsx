@@ -17,10 +17,10 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
      <div className="container-fluid">
     <a className="navbar-brand" href="" ><img src="./src/Image/Dev.png" alt="" height="80px"/> </a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navBar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarScroll">
       <ul className="navBar-nav me-auto mb-2 mb-lg-0  ul"  >
       
 
@@ -28,13 +28,15 @@ const Navbar = () => {
               Home
             </Link>
 
-            <Link class="nav-link active fs-2" aria-current="page" to="/additem">
+            <Link class="nav-link active fs-2  fas fa-cart-plus"  aria-current="page" to="/additem">
               AddItem
             </Link>
 
             <Link class="navbar-brand fs-2" to="/cart">
-              Cart : {selectObj.Cart.length}
+             Cart : {selectObj.Cart.length}
             </Link>
+                  
+            
         
       </ul>
       <form className="d-flex">
